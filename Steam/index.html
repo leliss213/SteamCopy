@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/6b9f0f3cf0.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="imagex/png" href="logo.svg">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamesLibrary</title>
+</head>
+<body style="background-color: #010103">  
+    
+    <header>
+
+        <div class="container">
+            <img src="Logo.svg" alt="logo do site" class="logo">
+            <div class="icons">
+                <ul>
+                    <div class="search-funcao">
+                        <input class="search" type="text" placeholder ="Search..."></input>
+                        <li><a href="" class="search-icon"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                    </div>
+                    <li><a href=""><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></li>      
+                    <li><a><i class="fa-solid fa-bars" id="menu-icon"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <nav class="nav">
+            <ul class="navlist">
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="#games">games</a></li>
+            </ul>
+        </nav>
+
+    </header> 
+
+    <center>
+        <div id="carrosel">
+        
+            <img src="Images/EldenRing.jpg" class="atual" alt="Capa do jogo Elden Ring">
+            <img src="Images/FIFA.jpg" alt="Capa do jogo FIFA22">
+            <img src="Images/GOD.jpg" alt="Capa do jogo God Of War">
+            <img src="Images/HollowKnight.jpg" alt="Capa do jogo Hollow Knight">
+            <img src="Images/MHrise.jpg" alt="Capa do jogo Monster Hunter Rise">
+            <img src="Images/RedDead2.jpg" alt="Capa do jogo Red Dead Redemption II">
+        
+        </div>
+    </center>
+    <script src="script.js" defer></script>
+
+    <main>
+        <section class="games" id="games">
+
+            <div class="titulo-games">
+                <h1>Biblioteca  <span>/ Jogos</span></h1>
+            </div>
+
+            <div class="box-container">
+        
+                <div class="box">
+                    
+                    <div class="image">
+                        <img src="Images/FIFA.jpg" alt="Capa do jogo FIFA22">
+                    </div>
+                    <div class="icons">
+                        <a href="games-views/fifa.html" class="fa-solid fa-gamepad"></a>
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>             
+                    </div>
+                    <div class="content">
+                        <h3>FIFA 22</h3>
+                        <div class="price">$299,00</div>
+                    </div>
+                </div>
+        
+                <div class="box"> 
+                    <div class="image">
+                        <img src="Images/EldenRing.jpg" alt="Capa do jogo Elden Ring">
+                    </div>
+                    <div class="icons">
+                        <a href= "games-views/eldenRing.html" class="fa-solid fa-gamepad"></a>
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>                       
+                    </div>
+                    <div class="content">
+                        <h3>Elden Ring</h3>  
+                        <div class="price">$199,00</div>
+                    </div>
+                </div>
+        
+                <div class="box">
+                    
+                    <div class="image">
+                        <img src="Images/GOD.jpg" alt="Capa do jogo God Of War">
+                    </div>
+                    <div class="icons">
+                        <a href="games-views/GOD.html" class="fa-solid fa-gamepad"></a>
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <div class="content">
+                        <h3>God Of War - Deluxe</h3>
+                        <div class="price">$399,00</div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="Images/HollowKnight.jpg" alt="Capa do jogo Hollow Knight">
+                    </div>
+                    <div class="icons">
+                        <a href="games-views/hollowKnight.html" class="fa-solid fa-gamepad"></a>
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>             
+                    </div>
+                    <div class="content">
+                        <h3>Hollow Knight</h3>
+                        <div class="price">$99,00</div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="Images/MHrise.jpg" alt="Capa do jogo Monster Hunter Rise">
+                    </div>
+                    <div class="icons">
+                        <a href="games-views/mhRise.html" class="fa-solid fa-gamepad"></a>
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>             
+                    </div>
+                    <div class="content">
+                        <h3>Monster Hunter Rise</h3>
+                        <div class="price">$279,00</div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="Images/RedDead2.jpg" alt="Capa do jogo Red Dead Redemption">
+                    </div>
+                    <div class="icons">
+                        <a href="games-views/redDead2.html" class="fa-solid fa-gamepad"></a>
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>             
+                    </div>
+                    <div class="content">
+                        <h3>Red Dead Redemption 2</h3>
+                        <div class="price">$299,00</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <section class="mapasite">
+            <div class="genero"> 
+                <h2>Generos</h2>
+                <p>Moba</p>
+                <p>FPS</p>
+                <p>RPG</p>
+                <p>Ação e Aventura</p>
+                <p>Estratégia</p>
+                <p>Esportes</p>
+            </div>
+            <div class="ajuda">
+                <h2>Ajuda</h2>
+                <p>Perguntas Frequentes</p>
+                <p>Fale Conosco</p>
+                <p>Termos de Compra</p>
+                <p>Políticas e Privacidade</p>
+            </div>
+            <div class="contato">
+                <h2>Contato</h2>
+                <p>Email: gameslibrary@gmail.com</p>
+                <p>Telefone: (51) 998081310</p>
+                <p>Quem Somos</p>
+                <h2>Redes Socias</h2>
+                <a href="https://www.facebook.com" target="blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com" target="blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/home" target="blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="pagamento">
+                <h2>Métodos de Pagamentos</h2>
+                <ul>
+                    <li><img src="Images/visa.svg" alt="visa"></li>
+                    <li><img src="Images/boleto.svg" alt="boleto"></li>
+                    <li><img src="Images/paypal.svg" alt="paypal"></li>
+                    <li><img src="Images/mastercard.svg" alt="mastercard"></li>
+                    <li><img src="Images/pix.png" alt="aceitas pix"></li>
+                    <!-- <li><i class="fa-brands fa-pix"></i></li> -->
+                </ul>
+            </div>
+        </section>
+         
+    </footer>
+    
+</body>
+</html>

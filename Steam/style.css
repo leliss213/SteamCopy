@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+    --main-color: #9c6ce4;
+    --black: rgba(0, 0, 0, 0.486);
+    /* --black: #002336; */
+    --white:  aliceblue;
+    --border:.1rem solid #9c6ce4;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body{
+    background: url("Images/background.png") center center;
+    background-size: cover;
+    height: 92vh;
+}
+
+a{
+    
+    color: var(--white);
+    text-decoration: none;
+}
+
+::-webkit-scrollbar{
+    border: var(--black);
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
+
+/* CABEÇALHO */
+.navlist{
+    list-style: none;
+    display: flex;
+    margin: 3rem;
+}
+
+.navlist li{
+    letter-spacing: 3px;
+    margin-left: 4rem;
+    font-size: x-large;
+}
+
+.navlist li a{
+    margin: 3rem;
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 2s linear;
+    transition: 250ms;
+    
+}
+
+.navlist li a:hover{
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+} 
+
+.nav{
+    height: 55px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5rem;
+    background-color: var(--black);
+}
+
+.container{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.logo{
+    width: 450px;
+    height: 225px;
+    object-fit: cover;
+}    
+
+.icons{
+    display: inline-flex;   
+}
+
+#menu-icon{
+    display: none;
+    cursor: pointer;
+}
+
+
+.icons ul{
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.icons ul li a i{
+   font-size: 3.5rem; 
+   padding: 1.5rem;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem;
+    padding: 1.5rem 0.5rem;
+    font-size:x-large;
+} 
+
+.fas{
+    font-size: xx-large;
+}
+
+.search{
+    border-radius: 1rem;
+    background: none;
+    color: var(--white);
+    font-size: 1.5rem;
+    transition: 450ms;
+    width: 0;
+    float: right;
+    height: 40px;
+}
+
+.search-funcao{
+    display: flex;
+    align-items: center;
+}
+
+.search-funcao:hover >.search{
+    width: 240px;
+    border: var(--border);
+    background-color: var(--black);
+    padding-right: 3rem;
+}
+
+
+/* CARROSEL */
+#carrosel{
+    box-shadow: .8rem .8rem .3rem var(--black);
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 660px;
+    height: 25vw;
+    max-height: 285px;
+    position: relative;
+    object-fit: cover;
+    
+}
+
+#carrosel img{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1200ms;
+}
+
+#carrosel img.atual{
+    opacity: 1;
+    border-radius: 1rem;
+}
+
+
+/* MAIN */
+.games .titulo-games{
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+.games h1 {
+    /* color:var(--main-color); */
+    color: var(--white);
+    display: block;
+    padding-top: 1rem;
+    /* font-size: 2rem; */
+}
+
+.games span{
+    /* color: var(--white); */
+    color: var(--main-color);
+}
+
+.games .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); 
+    gap:1.5rem;
+    padding-bottom: 4.5rem;
+}
+
+.games .box-container .box{
+    text-align: center;
+    border:var(--border);
+    padding: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    transition: 350ms;
+    border-radius: 0.5rem;
+}
+
+.games .box-container .box:hover{
+    border-color: var(--white);
+}
+
+.games .box-container .box .icons a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2.5rem;
+    border:var(--border);
+    color:var(--white);
+    margin:.3rem;
+    transition: 350ms;
+}
+
+.games .box-container .box .icons a:hover{
+    background:var(--main-color);
+}
+
+.games .box-container .box .image{
+    padding: 2.5rem 0;
+}
+
+.games .box-container .box .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.games .box-container .box .content h3{
+    color: var(--white);
+    font-size: 2.5rem;
+}
+
+.games .box-container .box .content .price{
+    color: var(--white);
+    font-size: 2.5rem;
+}
+
+
+/* FOOTER */
+.mapasite{
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    border-top: var(--border);
+}
+
+.mapasite div h2{
+    color: var(--white);
+}
+
+.mapasite div p{
+    letter-spacing: 1px;
+    margin-top: 5px;
+    color: var(--white);
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.mapasite div p:hover{
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.pagamento ul li{
+    list-style: none;
+}
+
+.contato a i{
+    font-size: x-large;
+    display: flex;
+    margin-top: 15px;
+}
+
+.contato a i:hover{
+    color: var(--main-color);
+}
+
+
+/* RESPONSIVO */
+@media (max-width:1200px){
+    html{
+        font-size: 85%;
+    }
+
+    section{
+        padding: 1rem;
+    }
+}
+
+
+@media (max-width:991px){
+
+    html{
+        font-size: 65%;
+    }
+
+    .header{
+        padding:1.5rem 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+    .logo{
+        width: 260px;
+        height: 130px;
+    }
+
+    .container{
+        padding-bottom: 2rem;
+    }
+
+}
+
+
+@media (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .logo{
+        height: 30%;
+        width: 30%;
+    }
+
+    .search-funcao:hover >.search{
+        width: 16rem;
+    }
+
+    .search{
+        height: 2.5rem;
+    }
+
+    #carrosel{
+        max-width: 60%;
+        margin-top: 15rem;
+    }
+
+    .icons ul li a i{
+        font-size: 2.5rem; 
+        padding: 0.5rem;
+     }
+
+    #menu-icon{
+        display: inline-block;
+    }
+
+    .navlist{
+        border: var(--border);
+        transition: 250ms;
+        transform: translateX(1500%);
+        position: absolute;
+        top: 5rem;
+        height: 15rem;
+        width: 50vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--black);  
+    }
+
+    .navlist li a{
+        font-size: 15%;
+    }
+
+    .nav{
+        width: 0;
+    }
+    
+    .navlistOpen{ 
+        z-index: 1;
+        height: auto; 
+        width: 110%;  
+        padding: 1rem;
+        right: 100%; 
+        transform: translateX(100%); 
+    }
+
+    
+
+    .navlistOpen li a{
+        font-size: 2rem;
+    }
+
+    .header .navlist a{
+        color:var(--black);
+        display: block;
+        margin:1.5rem;
+        padding:.5rem;
+        font-size: 2rem;
+    }
+
+    footer{
+        font-size: 75%;
+    }
+
+    .contato a i{
+        font-size: large;
+    }
+}
+
+@media (max-width:450px){
+    
+    html{
+        font-size: 50%;
+    }
+
+}
